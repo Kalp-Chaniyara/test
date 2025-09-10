@@ -42,6 +42,7 @@ npm install
 #### 3. Rename .env.example to .env
 Rename the ".env.example" file in the root folder to ".env".
 ```bash 
+# Rename file using command or do it manually in your code editor.
 mv .env.example .env
 ```
 
