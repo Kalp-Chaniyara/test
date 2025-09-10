@@ -1,11 +1,14 @@
-# Setup Up Locally
+# Manaska
+
+
+## Setup Up Locally
 
 
 Follow the steps below to set up the project on your local machine.
 
 ---
 
-## Prerequisites
+### Prerequisites
 
 Make sure you have the following installed:
 
@@ -14,9 +17,9 @@ Make sure you have the following installed:
 
 ---
 
-## Steps
+### Steps
 
-### 1. Clone the respository
+#### 1. Clone the respository
 ```bash
 #SSH
 git clone git@github.com:VrundDA/manaska.git
@@ -27,7 +30,7 @@ git clone git@github.com:VrundDA/manaska.git
 git clone https://github.com/VrundDA/manaska.git
 ```
 
-### 2. Install Dependencies
+#### 2. Install Dependencies
 Run the following commands to navigate to project folder and download node_module packages:
 ```bash
 # Go into project directory
@@ -36,7 +39,7 @@ cd manaska/
 npm install
 ```
 
-### 3. Start the postgreSQL database and pgAdmin
+#### 3. Start the postgreSQL database and pgAdmin
 
 ***NOTE: Make sure you have installed **docker** and **docker-compose** on your machine.***
 
@@ -65,7 +68,7 @@ You can also check if pgadmin is working by going to [localhost:8080](localhost:
 Email: student@dau.ac.in
 Password: student
 ```
-### 4. Start the development server
+#### 4. Start the development server
 
 Now you can navigate back to the root directory and start the development server by running:
 ```bash
@@ -77,7 +80,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ___
 
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -86,7 +89,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
