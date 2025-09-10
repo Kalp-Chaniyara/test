@@ -41,6 +41,9 @@ npm install
 
 #### 3. Rename .env.example to .env
 Rename the ".env.example" file in the root folder to ".env".
+```bash 
+mv .env.example .env
+```
 
 #### 4. Start the postgreSQL database and pgAdmin
 
