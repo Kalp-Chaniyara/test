@@ -63,7 +63,7 @@ If you see the following containers in the list, everything was successful:
 
 You can also check if pgadmin is working by going to [localhost:8080](localhost:8080).
 
-```yaml
+```yml
 // Login Credentials for pgadmin are:
 Email: student@dau.ac.in
 Password: student
