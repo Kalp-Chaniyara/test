@@ -1,7 +1,22 @@
 ## Setup Up Locally
 
-First, make sure your local machine had node installed.
-Second, clone the repository in your local machine using:
+
+Follow the steps below to set up the project on your local machine.
+
+---
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) on your machine.
+- [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) for running the PostgreSQL database.
+
+---
+
+## Steps
+
+### 1. Clone the respository
 ```bash
 #SSH
 git clone git@github.com:VrundDA/manaska.git
@@ -11,7 +26,9 @@ git clone git@github.com:VrundDA/manaska.git
 #HTTP   
 git clone https://github.com/VrundDA/manaska.git
 ```
-Next, run the following commands to navigate to project folder and download node_module packages:
+
+### 2. Install Dependencies
+Run the following commands to navigate to project folder and download node_module packages:
 ```bash
 # Go into project directory
 cd manaska/
@@ -19,9 +36,11 @@ cd manaska/
 npm install
 ```
 
-Next, we have to spin a local postgres database, for that install **docker** and **docker-compose** on your machine.
+### 3. Start the postgreSQL database and pgAdmin
 
-Then, navigate to ***/db/startdb*** and run the following command:
+***NOTE: Make sure you have installed **docker** and **docker-compose** on your machine.***
+
+Navigate to ***/db/startdb*** and run the following command:
 ```bash
 # Starts a postgres database on 5432 port and pgadmin on port 8080 on localhost.
 # Check /db/startdb/docker-compose.yaml for details.
@@ -39,7 +58,6 @@ If you see the following containers in the list, everything was successful:
 |ab7bc27513b6  |  dpage/pgadmin4   | "/entrypoint.sh"       |  50 minutes ago  | Up 50 minutes |  443/tcp, 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp |  manaskapgadmin|
 |2259634cef9f  |  postgres:latest  | "docker-entrypoint.s…" |  57 minutes ago  | Up 50 minutes | 0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp       |  manaskadb     |
 
-
 You can also check if pgadmin is working by going to [localhost:8080](localhost:8080).
 
 ```js
@@ -47,15 +65,16 @@ You can also check if pgadmin is working by going to [localhost:8080](localhost:
 Email: student@dau.ac.in
 Password: student
 ```
+### 4. Start the development server
 
-Now you can navigate back to the root folder and start the development server by running:
+Now you can navigate back to the root directory and start the development server by running:
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Now you local machine is ready to be coded in.
+___
 
 
 ## Learn More
