@@ -1,4 +1,4 @@
-## Setup Up Locally
+# Setup Up Locally
 
 
 Follow the steps below to set up the project on your local machine.
