@@ -1,25 +1,25 @@
-# Manaska
+<font size=100> **Manaska** </font>
 
 
-## Setup Up Locally
+# Setup Up Locally
 
 
 Follow the steps below to set up the project on your local machine.
 
 ---
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) on your machine.
-- [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) for running the PostgreSQL database (Not required if using an online database).
+- [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) for running the PostgreSQL database (Not required if using an online database)
 
 ---
 
-### Steps
+## Steps
 
-#### 1. Clone the respository
+### 1. Clone the respository
 ```bash
 #SSH
 git clone git@github.com:VrundDA/manaska.git
@@ -30,7 +30,7 @@ git clone git@github.com:VrundDA/manaska.git
 git clone https://github.com/VrundDA/manaska.git
 ```
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 Run the following commands to navigate to project folder and download node_module packages:
 ```bash
 # Go into project directory
@@ -39,16 +39,16 @@ cd manaska/
 npm install
 ```
 
-#### 3. Rename .env.example to .env
+### 3. Rename .env.example to .env
 Rename the ".env.example" file in the root folder to ".env".
 ```bash 
 # Rename file using command or do it manually in your code editor.
 mv .env.example .env
 ```
 
-#### 4. Start the postgreSQL database
+### 4. Start the postgreSQL database
 
-##### Option 1: Setup a docker postgres database:
+#### Option 1: Setup a docker postgres database:
 
 ***NOTE: Make sure you have installed **docker** and **docker-compose** on your machine.***
 
@@ -78,7 +78,7 @@ Email: student@dau.ac.in
 Password: student
 ```
 
-##### Option 2: Use an online postgres database:
+#### Option 2: Use an online postgres database:
 1) GOTO: https://neon.com/
 2) Sign Up or Sign In on neon.com
 3) Create a new project, name it manaska, choose AWS or Azure for server, choose region closest to you (Singapore) and click create.
@@ -91,14 +91,14 @@ DATABASE_URL=YOUR_COPIED_CONNECTION_STRING
 7) Save the file and continue with the next step.
 
 
-#### 5. Run Migrations to fill the database.
+### 5. Run Migrations to fill the database.
 Run the following command to fill your local database on 5432 port to match the schema defined in ***db/schema.ts***.
 ```bash
 npx drizzle-kit migrate
 ```
 After running, check your local postgres database on port 5432. It should contain the users table defined in ***db/schema.ts***.
 
-#### 6. Start the development server
+### 6. Start the development server
 
 Now you can navigate back to the root directory and start the development server by running:
 ```bash
@@ -110,7 +110,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ___
 
 
-### Learn More
+## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -119,7 +119,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Deploy on Vercel
+## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
